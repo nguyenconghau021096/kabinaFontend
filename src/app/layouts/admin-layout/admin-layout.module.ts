@@ -14,6 +14,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChartsModule } from 'ng2-charts';
 import { TablesComponent } from 'src/app/pages/tables/tables.component';
 
+
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -25,7 +26,7 @@ import { TablesComponent } from 'src/app/pages/tables/tables.component';
     ClipboardModule,
     ChartsModule,
     ReactiveFormsModule,
-    UserLayoutModule
+    UserLayoutModule,
   ],
   declarations: [
     DashboardComponent,

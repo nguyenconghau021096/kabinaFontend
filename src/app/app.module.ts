@@ -20,7 +20,7 @@ import { ComponentsModule } from './components/components.module';
 import { ChartsModule } from 'ng2-charts';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-import { AgGridModule } from 'ag-grid-angular';
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -35,7 +35,6 @@ import { AgGridModule } from 'ag-grid-angular';
     ChartsModule,
     KabinaModule,
     NgxPaginationModule,
-    AgGridModule.withComponents([]),
   ],
   declarations: [
     AppComponent,
