@@ -1,0 +1,94 @@
+$white: #ffffff;
+$black: #000000;
+$yellow: #FFFF00;
+$blue : #00C9FF;
+$green: #4CAF50;
+$chinh: #f5365c ;
+$red: #EA1E30;
+.shelf-list{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 463px;
+}
+.shelf-wrapper{
+    margin: 10px 0px;
+}
+
+.shelf{
+    width: 100%;
+    cursor: pointer;
+    padding: 18px 12px;
+    color: #212529;
+    background-color: $white;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid $red;
+    border-radius: 2px;
+    &:hover{
+        background-color: #00C9FF;
+        border-color: #00C9FF;
+    }
+}
+
+.shelf-occupied{
+   background-color: $red;
+}
+
+.shelf-owner{
+    background-color: #00C9FF;
+    border-color: #00C9FF;
+}
+// .shelf-waiting{
+//   background-color: $green-shelf-watting;
+//   border-color: $green-shelf-watting;
+// }
+.shelf-click{
+    background-color: $green;
+    border-color: $green;
+}
+
+.col-2-custom {
+    width: 20%;
+    float:left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.margintop{
+    margin-top: -50px;
+}
+
+#shelf-modal{
+    display: none;
+
+    position: fixed;
+    top: 32%;
+    left: 45.5%;
+    //transform: translate(-50%, -50%);
+
+    border-radius: 4px;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.08);
+    background-color: #00C9FF;
+    color: #fff;
+    //border: 2px solid $yellow;
+    text-align: center;
+    padding: 80px;
+    .h1{
+        color: #fff;
+    }
+    .btn-close{
+        position: absolute;
+        bottom: 0;
+        right:0;
+        border:none;
+        background-color: #5e72e4;
+        color:#fff;
+        &:hover{
+            border: #5e72e4;
+        }
+    }   
+}

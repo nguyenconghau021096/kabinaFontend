@@ -1,0 +1,25 @@
+<div class="main-content">
+  <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+    <div class="container px-4">
+      <a class="navbar-brand"> 
+        <!-- <img src="../.././../assets/images/logos/company_logo.png" /> -->
+      </a>
+
+      <div class="collapse navbar-collapse"  [ngbCollapse]="isCollapsed" id="sidenav-collapse-main">
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link nav-link-icon" routerLinkActive="active" [routerLink]="['/auth/login']">
+              <i class="ni ni-key-25"></i>
+              <!-- <span class="nav-link-inner--text">Login</span> -->
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
+
