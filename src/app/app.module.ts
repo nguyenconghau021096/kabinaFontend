@@ -21,7 +21,6 @@ import { ChartsModule } from 'ng2-charts';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AgGridModule } from 'ag-grid-angular';
-import { TablesComponent } from './pages/tables/tables.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,

@@ -1,3 +1,4 @@
+import { AdminUserlistComponent } from '../../pages/admin-userlist/admin-userlist.component';
 import { BookingAdminComponent } from './../../pages/booking-admin/booking-admin.component';
 import { Routes } from '@angular/router';
 import { DashboardComponent } from '../../pages/dashboard/dashboard.component';
@@ -21,5 +22,6 @@ export const AdminLayoutRoutes: Routes = [
             }
         ]
     },
+    { path: 'userList', component: AdminUserlistComponent },
 
 ];

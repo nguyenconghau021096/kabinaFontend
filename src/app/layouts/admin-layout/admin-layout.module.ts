@@ -1,3 +1,4 @@
+import { AdminUserlistComponent } from './../../pages/admin-userlist/admin-userlist.component';
 import { UserLayoutModule } from './../user-layout/user-layout.module';
 import { BookingAdminComponent } from '../../pages/booking-admin/booking-admin.component';
 import { NgModule } from '@angular/core';
@@ -28,7 +29,8 @@ import { TablesComponent } from 'src/app/pages/tables/tables.component';
   ],
   declarations: [
     DashboardComponent,
-    BookingAdminComponent
+    BookingAdminComponent,
+    AdminUserlistComponent
   ]
 })
 
