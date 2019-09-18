@@ -18,6 +18,8 @@ export class DashboardComponent implements OnInit {
   businessBooked = 0;
   userTotal = 0;
 
+  test='30%';
+
   public barChartOptionsBU = {};
   public barChartOptionsFloor = {};
 
