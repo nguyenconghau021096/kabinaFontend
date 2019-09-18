@@ -44,7 +44,7 @@ export class TablesComponent implements OnInit {
   getData() {
     this.shelfServices.getShelfList(this.currentUser.business.unitId).toPromise()
     .then(data=>{
-      this.listShelf = this.shelfServices.parseShelfDataToArray(data);
+      console.log(data);
     })
   }
   // getShelfListWrapper(){

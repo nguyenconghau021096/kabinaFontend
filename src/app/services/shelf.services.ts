@@ -15,36 +15,6 @@ export class ShelfServices {
   // }
 
   getShelfList(unitId) {
-    return this.http.get(`${environment.api}/findAllBookingDetailFromUnit?unitId=` + unitId)
-  }
-  parseShelfDataToArray(data) {
-    let arr = [];
-    for(var key in data){
-      let floor=data[key];
-        this.parseShelfDataToArrayFloor(floor);
-    }
-  }
-  parseShelfDataToArrayFloor(data){
-    let arr = [];
-    for (var key in data){
-        arr.push(this.parseShelfDataToArrayFloorFree(data[key], key))
-    }
-    console.log('asfasf')
-    console.log(arr);
-    return arr;
-  }
-  parseShelfDataToArrayFloorFree(data, status ){
-    console.log(data)
-    let arr=[];
-    if(status=='Free'){
-      for(var key in data){
-        console.log(key)
-        arr.push({key:['','','','','']})
-      }
-    }
-    else{
-      arr=data;
-    }
-    return arr;
+    return this.http.get(`${environment.api}/getMapShelfFromUnit?unitId=` + unitId)
   }
 }
