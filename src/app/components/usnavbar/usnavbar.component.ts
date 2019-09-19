@@ -36,7 +36,7 @@ export class UsnavbarComponent implements OnInit {
             return this.listTitles[item].title;
         }
     }
-    return 'Profile';
+    return 'Booking';
   }
 
   logout() {

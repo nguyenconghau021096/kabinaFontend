@@ -14,7 +14,13 @@ export class ShelfServices {
   //   return this.http.get(url);
   // }
 
-  getShelfList(unitId) {
-    return this.http.get(`${environment.api}/getMapShelfFromUnit?unitId=` + unitId)
+  getShelfList(unitId, role) {
+    if(role=='Admin'){
+      return this.http.get(`${environment.api}/getMapShelfAdmin`)
+    }
+    else {
+      return this.http.get(`${environment.api}/getMapShelfFromUnit?unitId=` + unitId)
+    }
+    
   }
 }

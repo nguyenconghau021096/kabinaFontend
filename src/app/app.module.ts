@@ -20,7 +20,8 @@ import { ComponentsModule } from './components/components.module';
 import { ChartsModule } from 'ng2-charts';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { NgxPaginationModule } from 'ngx-pagination';
-
+import { AgGridModule } from 'ag-grid-angular';
+import { TablesComponent } from './pages/tables/tables.component';
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -34,14 +35,15 @@ import { NgxPaginationModule } from 'ngx-pagination';
     AppRoutingModule,
     ChartsModule,
     KabinaModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AgGridModule.withComponents([]),
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
     UserLayoutComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

@@ -27,9 +27,7 @@ export class UserProfileComponent implements OnInit {
 
     this.UserObject = this._userProfile.getUserInfo(this.currentUser.userId).subscribe(
       data => {
-       
         this.UserObject = data;
-        console.log(this.UserObject)
       },
       err => {
         alert(err);
